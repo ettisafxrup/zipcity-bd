@@ -1,6 +1,6 @@
 {
   "name": "zipcode-bd",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo 'Star our repo at github: https://github.com/ettisafxrup/zipcode-bd'"
