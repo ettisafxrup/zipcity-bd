@@ -1,4 +1,4 @@
-const zip = {
+const data = {
   Dhaka: [
     {
       subDistrict: "Demra",
@@ -6747,4 +6747,45 @@ const zip = {
   ],
 }
 
-module.exports = zip
+/* unction searchByDistrict(district) {
+  // write me a code where search by district from param district
+  // return the list of villages in the district
+  // Example: searchByDistrict("Rangamati") returns ['Rajsthali', 'Marishya', 'Naniachhar']
+  // Example: searchByDistrict("Bandarban") returns ['Roanchhari', 'Ruma', 'Thanchi']
+  // Example: searchByDistrict("Coxs Bazar") returns ['Chiringga', 'Gorakghat', 'Kutubdia', 'Ramu', 'Teknaf', 'Ukhia']
+} */
+
+// Function to search by district (division)
+function searchByDistrict(district) {
+  return data[district] || []
+}
+
+// Function to search by village
+function searchByVillage(village) {
+  if (typeof village != "string")
+    return "Error: searchByVillage - Please input a valid Name"
+  let results = []
+  for (const district in data) {
+    results.push(
+      ...data[district].filter(
+        (entry) => entry.village.toLowerCase() === village.toLowerCase()
+      )
+    )
+  }
+  return results
+}
+
+// Function to search by postal code
+function searchByCode(zipcode) {
+  // convert zipcode to string if it was inserted number
+  zipcode = String(zipcode)
+  let results = []
+  for (const district in data) {
+    results.push(
+      ...data[district].filter((entry) => entry.postalCode === zipcode)
+    )
+  }
+  return results
+}
+
+module.exports = { data, searchByDistrict, searchByVillage, searchByCode }
