@@ -1,6 +1,6 @@
 # ⛓ zipcode-bd
 
-"A Bangladeshi ZipCode Package"c <br>
+"A Bangladeshi ZipCode Package" <br>
 Get your Divisions, Subdivions and Villages with Postalcode in just seconds.
 
 ## Description
@@ -44,7 +44,7 @@ You can loop and iterate over them by simply,
 ```javascript
 const { data } = require("zipcode-bd")
 
-let dhakaArr = zip.Dhaka
+let dhakaArr = data.Dhaka
 console.log("Dhaka:")
 for (let i = 0; i < dhakaArr.length; i++) {
   console.log(
