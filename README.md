@@ -1,4 +1,4 @@
-# ⛓ zipcode-bd
+# ⛓ zipcity-bd
 
 "A Bangladeshi ZipCode Package" <br>
 A Bangladesh-based zipcode package to get your Divisions, Districts, City, Sub-City with PostalCode in just seconds.
@@ -10,13 +10,13 @@ This npm package provides postal codes, subdivision names, and village names for
 ## Installation
 
 ```bash
-npm install zipcode-bd
+npm install zipcity-bd
 ```
 
-require 'zipcode-bd' into your code
+require 'zipcity-bd' into your code
 
 ```javascript
-const zipcode = require("zipcode-bd")
+const zipcode = require("zipcity-bd")
 
 console.log(zip.data.Dhaka)
 console.log(zip.data.Rajshahi)
@@ -25,7 +25,7 @@ console.log(zip.data.Rajshahi)
 Or, for <b>❛better readability❜</b> of your code:
 
 ```javascript
-const { data } = require("zipcode-bd")
+const { data } = require("zipcity-bd")
 
 // Use zip.<anyDistrictName> to get all of it's sub Districts and Village names with Postal Codes
 // Example:
@@ -42,7 +42,7 @@ console.log(data.Rajshahi)
 You can loop and iterate over them by simply,
 
 ```javascript
-const { data } = require("zipcode-bd")
+const { data } = require("zipcity-bd")
 
 let dhakaArr = data.Dhaka
 console.log("Dhaka:")
@@ -77,7 +77,7 @@ You can use the built-in functions to search with District, Village and Postal C
  Allows to search by District Names.
 
 ```javascript
-const { searchByDistrict } = require("zipcode-bd")
+const { searchByDistrict } = require("zipcity-bd")
 
 let dhakaDistrict = searchByDistrict("Dhaka")
 let rajshahiDistrict = searchByDistrict("Rajshahi")
@@ -96,7 +96,7 @@ searchByDistrict("shahi") // returns same value as "Rajshahi"
 Allows to search by City Names.
 
 ```javascript
-const { searchByCity } = require("zipcode-bd")
+const { searchByCity } = require("zipcity-bd")
 
 let mirpurCity = searchByCity("Mirpur")
 let ishwardiCity = searchByCity("Ishwardi")
@@ -114,7 +114,7 @@ searchByCity("Ishwar") // returns same value as "Ishwardi"
 Allows to search by Sub-City/Thana/Union Names.
 
 ```javascript
-const { searchBySub } = require("zipcode-bd")
+const { searchBySub } = require("zipcity-bd")
 
 let dhapariSubCity = searchBySub("Dhapari")
 let pakshiSubCity = searchBySub("Pakshi")
@@ -133,7 +133,7 @@ searchBySub("Pak") // returns same value as "Pakshi"
 Using postalCode to search the District, subDistrict and City
 
 ```javascript
-const { searchByCode } = require("zipcode-bd")
+const { searchByCode } = require("zipcity-bd")
 
 console.log(searchByCode(6640)) // Bhangura
 console.log(searchByCode(1212)) // Gulshan's postalCode
@@ -150,7 +150,7 @@ const {
   searchByCity,
   searchBySub,
   searchByCode,
-} = require("zipcode-bd")
+} = require("zipcity-bd")
 
 console.log(searchByDistrict("Rajshahi")) // Searchs all sub-Districts with Village name and Postal Codes
 console.log(searchByCity("Ishwardi")) // Finds with City name with Postal Code
