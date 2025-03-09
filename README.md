@@ -19,8 +19,11 @@ require 'zipcode-bd' into your code
 const zip = require("zipcode-bd")
 
 // Use zip.<anyDistrictName> to get all of it's sub Districts and Village names with Postal Codes
+// Example:
 
 console.log(zip.Dhaka)
 console.log(zip.Rajshahi)
 // Try yourself logging into the terminal!
 ```
+
+Happy coding, AssalamuAlaikum!
