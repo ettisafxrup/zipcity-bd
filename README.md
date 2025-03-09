@@ -16,7 +16,7 @@ npm install zipcity-bd
 require 'zipcity-bd' into your code
 
 ```javascript
-const zipcode = require("zipcity-bd")
+const zip = require("zipcity-bd")
 
 console.log(zip.data.Dhaka)
 console.log(zip.data.Rajshahi)
