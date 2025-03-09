@@ -1,6 +1,6 @@
-# zipcode-bd
+# ⛓ zipcode-bd
 
-"A Bangladeshi ZipCode Package" <br>
+"A Bangladeshi ZipCode Package"c <br>
 Get your Divisions, Subdivions and Villages with Postalcode in just seconds.
 
 ## Description
@@ -22,7 +22,7 @@ console.log(zip.data.Dhaka)
 console.log(zip.data.Rajshahi)
 ```
 
-Or, for <b>better readability</b> of your code:
+Or, for <b>❛better readability❜</b> of your code:
 
 ```javascript
 const { data } = require("zipcode-bd")
@@ -71,8 +71,9 @@ for (let i = 0; i < dhakaArr.length; i++) {
 <br>
 You can use the built-in functions to search with District, Village and Postal Code from the dataObject.
  <br>
+ <br>
  
- <strong>searchByDistrict</strong><br>
+ ♨<strong>searchByDistrict</strong><br>
  Allows to search by District Names.
 
 ```javascript
@@ -91,8 +92,8 @@ searchByDistrict("Dha") // returns same value as "Dhaka"
 searchByDistrict("shahi") // returns same value as "Rajshahi"
 ```
 
-<strong>searchByCity</strong><br>
-Allows to search by Village/City/Union Names.
+♨<strong>searchByCity</strong><br>
+Allows to search by City Names.
 
 ```javascript
 const { searchByCity } = require("zipcode-bd")
@@ -109,8 +110,8 @@ searchByCity("Mir") // returns same value as "Mirpur"
 searchByCity("Ishwar") // returns same value as "Ishwardi"
 ```
 
-<strong>searchByCity</strong><br>
-Allows to search by Village/City/Union Names.
+♨<strong>searchBySub</strong><br>
+Allows to search by Sub-City/Thana/Union Names.
 
 ```javascript
 const { searchBySub } = require("zipcode-bd")
@@ -127,7 +128,7 @@ searchBySub("Dha") // returns same value as "Dhapari"
 searchBySub("Pak") // returns same value as "Pakshi"
 ```
 
-<strong>searchByCode</strong>
+♨<strong>searchByCode</strong>
 <br>
 Using postalCode to search the District, subDistrict and City
 
@@ -140,7 +141,7 @@ console.log(searchByCode(1212)) // Gulshan's postalCode
 // Returns empty array if no data found.
 ```
 
-## Summary Code
+## 🧊 Summary Code
 
 ```javascript
 const {
