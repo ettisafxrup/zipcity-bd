@@ -15,8 +15,8 @@ npm install zipcode-bd
 
 require 'zipcode-bd' into your code
 
-```
-const zip = require ('zipcode-bd');
+```javascript
+const zip = require("zipcode-bd")
 
 // Use zip.<anyDistrictName> to get all of it's sub Districts and Village names with Postal Codes
 
