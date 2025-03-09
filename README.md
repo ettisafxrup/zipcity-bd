@@ -1,7 +1,7 @@
 # ⛓ zipcode-bd
 
 "A Bangladeshi ZipCode Package" <br>
-Get your Divisions, Subdivions and Villages with Postalcode in just seconds.
+A Bangladesh-based zipcode package to get your Divisions, Districts, City, Sub-City with PostalCode in just seconds.
 
 ## Description
 
