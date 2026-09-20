@@ -4,6 +4,7 @@
   "description": "A Bangladesh-based zipcode package to get your Divisions, Districts, City, Sub-City with PostalCode in just seconds.",
   "main": "index.js",
   "scripts": {
+    "build": "terser src/index.js -c -m -o index.js && terser src/data.js -c -m -o data.js",
     "test": "''"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ettisafxrup/zipcity-bd/issues"
   },
-  "homepage": "https://github.com/ettisafxrup/zipcity-bd#readme"
+  "homepage": "https://github.com/ettisafxrup/zipcity-bd#readme",
+  "devDependencies": {
+    "terser": "^5.40.0"
+  }
 }
